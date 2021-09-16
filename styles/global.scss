@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+// Primary
+$primary-card: rgb(88, 71, 235);
+$work-card: rgb(255, 140, 102);
+$play-card: rgb(86, 194, 230);
+$study-card: rgb(255, 92, 124);
+$exercise-card: rgb(74, 207, 129);
+$social-card: rgb(117, 54, 211);
+$care-card: rgb(241, 198, 91);
+
+// Neutral
+$background-color: rgb(15, 20, 36);
+$background-card: rgb(28, 31, 74);
+$buttons-off: rgb(111, 118, 200);
+$primary-text: #ffffff;
+$secondary-text: rgb(189, 193, 255);
+
+//Fonts
+$font-stack: 'Rubik', sans-serif;
+$title-size: 1.8rem;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-stack;
+  font-size: 62.5%;
+}
