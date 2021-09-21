@@ -185,6 +185,17 @@ body main .worked-card__container .worked-card__details p {
   color: #bdc1ff;
 }
 
+body main .cards-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 25px;
+}
+
 .icon {
   background-position: 92% -8%;
   background-size: 22%;

@@ -11,9 +11,14 @@ fetch('data.json')
     const care = obj[5]
     console.log(obj)
     const cards = document.querySelector('#card-section')
+    const container = document.querySelector('main')
 
     showDaily = () => {
+      cards.innerHTML = ''
+
       const workCard = document.createElement('div')
+      container.style.height = '100%'
+      container.style.margin = '25px 0'
       workCard.className = 'worked-card icon work'
       workCard.innerHTML += `
       <div class="worked-card__container">
@@ -25,7 +30,7 @@ fetch('data.json')
           <figure>
             <img src="./src/assets/icon-ellipsis.svg" alt="">
           </figure>
-          <p>Last Week - ${work.timeframes.daily.previous}hrs</p>
+          <p>Last Day - ${work.timeframes.daily.previous}hrs</p>
         </div>
       </div>
       `
@@ -43,7 +48,7 @@ fetch('data.json')
           <figure>
             <img src="./src/assets/icon-ellipsis.svg" alt="">
           </figure>
-          <p>Last Week - ${play.timeframes.daily.previous}hrs</p>
+          <p>Last Day - ${play.timeframes.daily.previous}hrs</p>
         </div>
       </div>
       `
@@ -61,7 +66,7 @@ fetch('data.json')
           <figure>
             <img src="./src/assets/icon-ellipsis.svg" alt="">
           </figure>
-          <p>Last Week - ${study.timeframes.daily.previous}hrs</p>
+          <p>Last Day - ${study.timeframes.daily.previous}hrs</p>
         </div>
       </div>
       `
@@ -79,7 +84,7 @@ fetch('data.json')
           <figure>
             <img src="./src/assets/icon-ellipsis.svg" alt="">
           </figure>
-          <p>Last Week - ${exercise.timeframes.daily.previous}hrs</p>
+          <p>Last Day - ${exercise.timeframes.daily.previous}hrs</p>
         </div>
       </div>
       `
@@ -97,7 +102,7 @@ fetch('data.json')
           <figure>
             <img src="./src/assets/icon-ellipsis.svg" alt="">
           </figure>
-          <p>Last Week - ${social.timeframes.daily.previous}hrs</p>
+          <p>Last Day - ${social.timeframes.daily.previous}hrs</p>
         </div>
       </div>
       `
@@ -115,7 +120,7 @@ fetch('data.json')
           <figure>
             <img src="./src/assets/icon-ellipsis.svg" alt="">
           </figure>
-          <p>Last Week - ${care.timeframes.daily.previous}hrs</p>
+          <p>Last Day - ${care.timeframes.daily.previous}hrs</p>
         </div>
       </div>
       `
@@ -123,7 +128,11 @@ fetch('data.json')
     }
     
     showWeekly = () => {
+      cards.innerHTML = ''
+
       const workCard = document.createElement('div')
+      container.style.height = '100%'
+      container.style.margin = '25px 0'
       workCard.className = 'worked-card icon work'
       workCard.innerHTML += `
       <div class="worked-card__container">
@@ -233,7 +242,11 @@ fetch('data.json')
     }
     
     showMonthly = () => {
+      cards.innerHTML = ''
+
       const workCard = document.createElement('div')
+      container.style.height = '100%'
+      container.style.margin = '25px 0'
       workCard.className = 'worked-card icon work'
       workCard.innerHTML += `
       <div class="worked-card__container">
@@ -245,7 +258,7 @@ fetch('data.json')
           <figure>
             <img src="./src/assets/icon-ellipsis.svg" alt="">
           </figure>
-          <p>Last Week - ${work.timeframes.monthly.previous}hrs</p>
+          <p>Last Month - ${work.timeframes.monthly.previous}hrs</p>
         </div>
       </div>
       `
@@ -263,7 +276,7 @@ fetch('data.json')
           <figure>
             <img src="./src/assets/icon-ellipsis.svg" alt="">
           </figure>
-          <p>Last Week - ${play.timeframes.monthly.previous}hrs</p>
+          <p>Last Month - ${play.timeframes.monthly.previous}hrs</p>
         </div>
       </div>
       `
@@ -281,7 +294,7 @@ fetch('data.json')
           <figure>
             <img src="./src/assets/icon-ellipsis.svg" alt="">
           </figure>
-          <p>Last Week - ${study.timeframes.monthly.previous}hrs</p>
+          <p>Last Month - ${study.timeframes.monthly.previous}hrs</p>
         </div>
       </div>
       `
@@ -299,7 +312,7 @@ fetch('data.json')
           <figure>
             <img src="./src/assets/icon-ellipsis.svg" alt="">
           </figure>
-          <p>Last Week - ${exercise.timeframes.monthly.previous}hrs</p>
+          <p>Last Month - ${exercise.timeframes.monthly.previous}hrs</p>
         </div>
       </div>
       `
@@ -317,7 +330,7 @@ fetch('data.json')
           <figure>
             <img src="./src/assets/icon-ellipsis.svg" alt="">
           </figure>
-          <p>Last Week - ${social.timeframes.monthly.previous}hrs</p>
+          <p>Last Month - ${social.timeframes.monthly.previous}hrs</p>
         </div>
       </div>
       `
@@ -335,7 +348,7 @@ fetch('data.json')
           <figure>
             <img src="./src/assets/icon-ellipsis.svg" alt="">
           </figure>
-          <p>Last Week - ${care.timeframes.monthly.previous}hrs</p>
+          <p>Last Month - ${care.timeframes.monthly.previous}hrs</p>
         </div>
       </div>
       `
@@ -343,16 +356,3 @@ fetch('data.json')
     }
 
   })
-  // .then(()=> console.log(obj))
-// async function cargarDatos() {
-//   fetch('data.json')
-//     .then(response => response.json()) 
-//     .then(activity => {
-//       return data = {...activity}
-//     })
-// }
-// cargarDatos()
-// console.log(data[0])
-
-// const work = obj.find( index => index.title === 'Work')
-// console.log(work)
