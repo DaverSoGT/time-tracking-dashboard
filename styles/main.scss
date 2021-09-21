@@ -2,5 +2,141 @@
 
 body {
   background-color: $background-color;
-  
+  main {
+    @include flexbox-center;
+    height: 100vh;
+    flex-direction: column;
+    gap: 25px;
+    .user-card {
+      background-color: $background-card;
+      width: 326px;
+      height: 200px;
+      border-radius: $corners-card;
+      &__date {
+        @include flex-inline;
+        background-color: $primary-card;
+        width: 100%;
+        height: 130px;
+        border-radius: $corners-card;
+        &--image {
+          img {
+            height: 70px;
+            width: 70px;
+            border: 3px solid $primary-text;
+            border-radius: 100%;
+          }
+        }
+        &--text {
+          h3 {
+            font-weight: 300;
+            font-size: 0.9rem;
+            color: rgb(206, 206, 206);
+            margin-bottom: 5px;
+          }
+          h1 {
+            color: $primary-text;
+            font-weight: 300;
+            font-size: 1.5rem;
+          }
+        }
+      }
+      &__journey {
+        @include flex-inline;
+        width: 100%;
+        height: 70px;
+        a {
+          color: $buttons-off;
+          font-size: 1.1rem;
+          text-decoration: none;
+        }
+        a:hover {
+          color: $secondary-text;
+          font-size: 1.2rem;
+        }
+        a:focus {
+          color: $primary-text;
+        }
+      }
+    }
+    .worked-card {
+      width: 326px;
+      height: 160px;
+      border-radius: $corners-card;
+      display: flex;
+      align-items: flex-end;
+      &__container {
+        color: $primary-text;
+        display: inline-flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: $background-card;
+        width: 100%;
+        height: 120px;
+        border-radius: $corners-card;
+        .worked-card__event {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+          h2 {
+            font-weight: 500;
+            font-size: 1.2rem;
+          }
+          p {
+            font-weight: 300;
+            font-size: 1.8rem;
+          }
+        }
+        .worked-card__details  {
+          display: flex;
+          flex-direction: column;
+          gap: 25px;
+          figure {
+            display: flex;
+            flex-direction: row-reverse;
+            img:hover {
+              cursor: pointer;
+            }
+          }
+          p {
+            font-weight: 300;
+            font-size: 0.9rem;
+            color: $secondary-text;
+          }
+        }
+      }
+    }
+  }
+}
+.icon {
+  background-position: 92% -8%;
+  background-size: 22%;
+  background-repeat: no-repeat;
+}
+.work {
+  background-color: $work-card;
+  background-image: $work-icon;
+  background-position: 94% -14%;
+  background-size: 25%;
+}
+.study {
+  background-color: $study-card;
+  background-image: $study-icon;
+}
+.play {
+  background-image: $play-icon;
+  background-color: $play-card;
+}
+.exercise {
+  background-image: $exercise-icon;
+  background-color: $exercise-card;
+  background-position: 92% 0%;
+}
+.care {
+  background-image: $care-icon;
+  background-color: $care-card;
+}
+.social {
+  background-image: $social-icon;
+  background-color: $social-card;
+  background-position: 92% -14%;
 }

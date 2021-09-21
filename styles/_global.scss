@@ -19,6 +19,28 @@ $secondary-text: rgb(189, 193, 255);
 //Fonts
 $font-stack: 'Rubik', sans-serif;
 $title-size: 1.8rem;
+$corners-card: 15px;
+
+// Images URL
+$profile-image: url('../src/assets/image-jeremy.png');
+$work-icon: url('../src/assets/icon-work.svg');
+$study-icon: url('../src/assets/icon-study.svg');
+$social-icon: url('../src/assets/icon-social.svg');
+$care-icon: url('../src/assets/icon-self-care.svg');
+$play-icon: url('../src/assets/icon-play.svg');
+$exercise-icon: url('../src/assets/icon-exercise.svg');
+
+@mixin flexbox-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-inline {
+  display: inline-flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
 
 * {
   margin: 0;

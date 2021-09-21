@@ -11,83 +11,40 @@
 </head>
 <body>
   <main>
-    <section>
-      <div>
-        <div>
-          <span></span>
-        </div>
-        <div>
+    <section class="user-card">
+      <div class="user-card__date">
+        <figure class="user-card__date--image">
+          <img src="./src/assets/image-jeremy.png" alt="Profile Image">
+        </figure>
+        <div class="user-card__date--text">
           <h3>Report for</h3>
           <h1>Jeremy Robson</h1>
         </div>
       </div>
-      <div>
-        <a href="">Daily</a>
-        <a href="">Weekly</a>
-        <a href="">Monthly</a>
+      <div class="user-card__journey">
+        <a href="#" id="dailyLink" onclick="showDaily()">Daily</a>
+        <a href="#" id="weeklyLink" onclick="showWeekly()">Weekly</a>
+        <a href="#" id="monthlyLink" onclick="showMonthly()">Monthly</a>
       </div>
     </section>
-    <section></section>
+    <section id="card-section">
+      <!-- <div class="worked-card icon social">
+        <div class="worked-card__container">
+          <div class="worked-card__event">
+            <h2>Work</h2>
+            <p>32hrs</p>
+          </div>
+          <div class="worked-card__details">
+            <figure>
+              <img src="./src/assets/icon-ellipsis.svg" alt="">
+            </figure>
+            <p>Last Week - 36hrs</p>
+          </div>
+        </div>
+      </div>   -->
+    </section>
   </main>
-  Report for
-  Jeremy Robson
 
-  Daily
-  Weekly
-  Monthly
-
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
-
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
-
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
-
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
-
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
-
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <script src="./app.js"></script>
 </body>
 </html>
