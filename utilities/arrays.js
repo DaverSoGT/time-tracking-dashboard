@@ -6,3 +6,5 @@ const colorsCard = [
   'worked-card icon social',
   'worked-card icon care'
 ]
+
+module.exports = colorsCard
