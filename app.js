@@ -3,6 +3,7 @@ fetch('data.json')
   .then(res => res.json())
   .then(data => {
     obj = data
+    console.log(data)
     const work = obj[0]
     const play = obj[1]
     const study = obj[2]

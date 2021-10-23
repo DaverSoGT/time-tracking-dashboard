@@ -1,0 +1,8 @@
+main {
+  display: grid;
+  grid-template: repeat(4, 1fr) / repeat(6, 1fr);
+  .user-card {
+    grid-column: 2 / 2;
+    grid-row: 2 / 3;
+  }
+}
